@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Carousel Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/estilos.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+
+    
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/images/logo.jpg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 enlaces_top">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-disabled="true">Idiomas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active fondo_slider1">
+        <div class="container">
+          <div class="carousel-caption text-start ">
+            <h2 class="animate__animated animate__backInRight">BAA es la firma de auditoria nacional con mayor trayectoria en Bolivia</h2>
+            <p class=""></p>
+            <p><a class="btn btn-lg btn-primary" href="#">Detalles</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item fondo_slider2">
+        <div class="container">
+          <div class="carousel-caption fondo_degra">
+            <h2 class="animate__animated animate__backInRight">Altos estándares en la prestación de servicios de: Auditoria, Contabilidad y Consultoría</h2>
+            <p><a class="btn btn-lg btn-primary" href="#">Leer más</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item fondo_slider3">
+        <div class="container">
+          <div class="carousel-caption fondo_degra text-end">
+            <h2 class="animate__animated animate__backInRight">Alto compromiso de: excelencia, calidad e integridad profesional.</h2>
+            <p><a class="btn btn-lg btn-primary" href="#">Más Detalles</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <h2 class="titulo_dos">Nuestra Misión</h2>
+        <p class="lista_meta">Desde 1967, la misión de Berthin Amengual y Asociados S.R.L. (BAA) ha sido ser la firma líder de auditoría con reconocimiento a nivel nacional.</p>
+<p class="lista_meta">Para esto, nos enfocamos en el trato personalizado y en ser socios estratégicos de cada uno de nuestros clientes en sus diferentes sectores.</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="assets/images/imagen_dos.jpg">
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <h2 class="titulo_dos">Nuestra meta</h2>
+        <p>Ser socios estratégicos para cada cliente</p>
+        <ul class="lista_meta">
+          <li>Trabajar conjuntamente apoyando e implementando soluciones, con el compromiso de: excelencia, calidad e integridad profesional.</li>
+          <li>Nuestro equipo multidisciplinario aporta soluciones (integrales) con valor agregado para consolidar relaciones a largo plazo.</li>
+        </ul>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="titulo_dos">Nuestra Firma.</h2>
+        <p class="lead" data-aos="fade-right">BAA es la firma de auditoria nacional con mayor trayectoria en Bolivia.  Estamos catalogadas entre las principales firmas de auditoría y consultoría en el país.
+Desde nuestra fundación en 1967 hemos mantenido altos estándares en la prestación de servicios de: Auditoria, Contabilidad y Consultoría.
+Los recursos humanos de nuestra firma son el pilar fundamental de nuestro negocio para poder brindar servicios individualizados a cada cliente. 
+Nuestro equipo trabaja en equipo con nuestros socios/clientes para brindar el soporte y apoyo necesario para implementar soluciones con un alto compromiso de: excelencia, calidad e integridad profesional.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="assets/images/imagen_uno.jpg" class="imagen_uno">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  </div><!-- /.container -->
+
+<h2 class="titulo_animado" data-aos="fade-right">SECTORES</h2>
+<div class="container">
+<div class="row">
+    <div class="col-6 col-md">
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Alimentos y Bebidas</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Agricultura</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Automotriz</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Administración Pública</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Banca e Instituciones financieras</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Construcción, Bienes y Raíces</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Distribución, Logística & Franquicias</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Energía</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Farmacéutico, Cuidado de la Salud, Bio-Tech</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Minería</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Organizaciones sin Fines de Lucro</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Productos de Consumo y Detallista</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Productos Industriales</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Plástico</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Salud</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Sector Educacional</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Tecnología</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Turismo</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Transporte</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">&#x2714;Servicios</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="container-fluid con_ser">
+<h2 class="titulo_animado" data-aos="fade-right">SERVICIOS</h2>
+<div class="row">
+    <div class="col-6 col-md">
+      <h5>Auditoria</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">• Auditoría externa</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Auditoría Operativa</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Auditoría de Tecnologías de la Información</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Auditorias Especiales</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Auditoría concurrente</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Due diligence, fusiones y adquisiciones</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Revisiones financieras</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Proyecciones</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Encuestas</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Evaluación de Control Interno</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Technical and Legal Audits</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Compliance audits</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Outsourcing</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">• Teneduría de libros</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Gestión de proyectos</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Departamentos de Seguimiento, Contabilidad y Financiero</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Operación de Soluciones</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Administración Pagos de Facturas y Contribuciones</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Subcontratación administrativa</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Subcontratación de recursos humanos</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Servicios de nómina</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Cumplimiento tributario</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Sistemas</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="link-secondary text-decoration-none" href="#">• Riesgo y Seguridad</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Gestión de Riesgos Tecnológicos</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Seguridad TI ISO17779/COBIT</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Auditoría y Control</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Consultoría de gestión de TI</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Área informática del gobierno</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Clasificación RR, IT</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Políticas, Normas y Procedimientos TI</a></li>
+        <li><a class="link-secondary text-decoration-none" href="#">• Comercio electrónico</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <h2 class="titulo_dos">Acerca de la Firma Internacional Urban Hacker and Young (UHY)</h2>
+  <p>UHY ofrece una ventaja competitiva excepcional: capacidades nacionales mejoradas por recursos globales y un servicio personalizado atento. Nuestros equipos en 325 oficinas en 100+ países se enorgullecen de su capacidad para combinar el conocimiento local con habilidades regionales, nacionales e internacionales. Sin embargo, es la cultura UHY la que realmente marca la diferencia para nuestros clientes.</p>
+
+  <p>La globalización y los cambios demográficos han creado nuevas oportunidades, pero realmente compartimos aspiraciones de éxito a través de la calidad con nuestros clientes. Nuestro impulso por el profesionalismo, la calidad, la integridad, la innovación y nuestro alcance global han logrado un crecimiento sustancial en nuestros 50 años de historia, tanto para nosotros como para nuestros clientes.</p>
+
+  <p>Los clientes de nuestras firmas miembro disfrutan de la importante ventaja competitiva del acceso a la experiencia y el conocimiento de más de 9000 profesionales en todo el mundo. Nuestra amplia experiencia y nuestro enfoque en las pequeñas y medianas empresas han creado la red de socios modelo para el siglo XXI.
+  </p>
+    </div>
+
+<div class="b-example-divider"></div>
+
+    <div class="container contenedor-ind_mem">
+        <p class="lead pt-3">Berthin Amengual y Asociados is a member of Urbach Hacker Young International Limited, a UK company, and forms part of the international UHY network of legally independent accounting and consulting firms. UHY is the brand name for the UHY international network. The services described herein are provided by UHY Hellmann (SA) and not by UHY or any other member firm of UHY. Neither UHY nor any member of UHY has any liability for services provided by other members.</p>
+        <img src="assets/images/imagen_cuatro.jpg" class="imagen_ind_mem">
+    </div>
+
+  <!-- FOOTER -->
+
+<div class="container-fluid">
+  <footer class="pie_pagina">
+    <div class="row">
+      <div class="col-6 col-md-6 mb-6 text-center">
+        <h5>La Paz</h5>
+        <p>Edif. Multicentro, Torre B – P. 12<br>
+        Avenida Arce y Rosendo Gutierrez<br>
+        Phone: +591 64223457</p>
+      </div>
+
+      <div class="col-6 col-md-6 mb-6 text-center">
+        <h5>Santa Cruz</h5>
+        <p>Calle Barachavi Nº 390<br>
+        y Calle Igmiri, Barrio Urbari<br>
+        Phone: +591 (3) 3544965</p>
+      </div>
+
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-center text-center conte_contac">
+      <p>Contáctanos a nuestro correo electrónico:  XXXX@berthinamengual.com</p>
+    </div>
+  </footer>
+</div>
+
+</main>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-out-back',
+    duration: 1000
+  });
+</script>
+    </body>
+</html>
